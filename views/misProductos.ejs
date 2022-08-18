@@ -1,0 +1,41 @@
+<%- include('./partials/head') %>
+
+</head>
+
+<body class="body-detalle">
+    <%- include('./partials/header') %>
+
+    <div class="uk-container">
+        <div class="uk-section">
+
+            <h1 class="uk-text-center"><%= title %></h1>
+
+
+            <div class="comentarios uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-flex uk-flex-wrap uk-flex-between uk-child-width-1-3 uk-padding-remove">
+                    <% productos.forEach(product => { %>
+                        <li class="uk-card uk-card-default uk-card-hover uk-card-body uk-margin">
+                          <a href="/productos/detalle/<%= product.id %>"  class="uk-link-text">
+                            <img src="<%= product.img_url %>" alt="" width="100%">
+                            <h5 class="uk-text-center"><%= product.nombre %></h5>
+                            <p class="uk-text-center">U$D <%= product.precio %></p>
+                            <p class="uk-text-center"><%= product.marca %></p>
+                          </a>
+                        </li>
+                    <% }) %>  
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+a {
+  color: #00B7FF;
+}
+header, header nav{
+  height: 100px;
+}
+
+header img.logo{
+    width: 50px;
+}
+
+
+/* detalle de producto */
+
+.body-detalle{
+
+}
+
+.body-detalle img.imagen-producto{
+  width: 40%;
+
+}
